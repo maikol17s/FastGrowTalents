@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300,400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  box-sizing: border-box;
+}
+.user-pic {
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.MenuSub {
+  position: absolute;
+  top: auto;
+  margin-top: 14px;
+  right: 8%;
+  padding: 0 10px;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(200px);
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  background-color: transparent;
+}
+.MenuSub.open-menu {
+  max-height: 400px;
+}
+.sub-menu {
+  padding: 15px;
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.user-info h4 {
+  font-weight: 500;
+}
+.line {
+  background: #fff; 
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 15px 0;
+  top: 0;
+  box-shadow: 0 0 10px #fff;
+}
+.user-info img {
+  width: 50px;
+  border-radius: 50%;
+}
+.sub-menu-link {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin: 10px;
+}
+.sub-menu-link p {
+  width: 100%;
+  font-size: 12px;
+}
+.sub-menu-link .icon {
+  margin-right: 15px;
+  padding: 1px;
+}
+.sub-menu-link span {
+  color: white;
+  font-size: 20px;
+  transition: transform 0.5s;
+}
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+.sub-menu-link:hover p {
+  font-size: 13px;
+}

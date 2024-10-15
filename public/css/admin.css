@@ -1,0 +1,76 @@
+/* MAIN SOURCES */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300,400,500,600,700&display=swap");
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.MainContainer {
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: flex-end;
+    color: #fff;
+    border: 2px solid #009688;
+    box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.1),
+        3px 3px 10px rgba(0, 0, 0, 0.35),
+        inset -3px -3px 10px rgba(255, 255, 255, 0.1),
+        inset 3px 3px 10px rgba(0, 0, 0, 0.35);
+}
+.sidebar {
+    width: 280px;
+    padding: 20px;
+    color: #fff;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+}
+.sidebar h2 {
+    margin-bottom: 40px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 20px;
+    transition: font-size 0.2s;
+}
+.sidebar ul li:hover {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.MainContentArea {
+    flex: 1;
+    padding: 20px;
+}
+.MainContentArea h2 {
+    margin-bottom: 20px;
+}
+.option {
+    display: flex;
+    align-items: center;
+}
+.option i {
+    margin-left: auto;
+}
+a {
+    cursor: pointer;
+}
+.additional-options {
+   margin-top: 80px;
+}
+.additional-options p {
+    margin-left: 10px;
+}
